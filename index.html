@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fancy Resume Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="min-h-screen flex items-center justify-center px-4">
+  <div class="w-full max-w-3xl bg-[#1a1a1a] p-8 rounded-2xl shadow-lg animate-slide-up">
+    <h1 class="text-4xl font-bold text-yellow-400 text-center mb-6">🚀 Fancy Resume Builder</h1>
+    <form id="resume-form" class="space-y-4">
+      <input type="text" id="name" placeholder="Full Name" class="input-style">
+      <input type="email" id="email" placeholder="Email Address" class="input-style">
+      <textarea id="skills" placeholder="Your Skills (comma separated)" class="input-style"></textarea>
+      <button type="button" onclick="generateResume()" class="generate-btn">Generate Resume</button>
+    </form>
+    <div id="resume-output" class="mt-10 p-6 bg-black text-white rounded-xl hidden animate-slide-up"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
