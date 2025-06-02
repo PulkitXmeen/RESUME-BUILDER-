@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0f0f0f;
+  color: #f4f4f4;
+}
+
+.input-style {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: black;
+  color: white;
+  border: 1px solid #facc15;
+  border-radius: 0.75rem;
+}
+
+.generate-btn {
+  background-color: #facc15;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.generate-btn:hover {
+  background-color: #fde047;
+  transform: scale(1.05);
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
